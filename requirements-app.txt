@@ -1,0 +1,4 @@
+# OPTIONAL: only needed if/when you later run the Streamlit web UI (app.py).
+# For local development you do NOT need this - use cli.py with requirements.txt.
+-r requirements.txt
+streamlit>=1.30

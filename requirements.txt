@@ -1,0 +1,5 @@
+# Core dependencies for local development (CLI + engine). No web server needed.
+pandas>=2.0
+openpyxl>=3.1
+PyYAML>=6.0
+xlrd>=2.0      # optional: legacy .xls reading

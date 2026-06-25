@@ -1,0 +1,16 @@
+app:
+  title: "CPI Sales Data Mapper"
+  company: "PT. Citra Pratama Indotama"
+  language: "id"          # id | en
+  fuzzy_threshold: 0.55     # product name match confidence cutoff
+  kg_tolerance: 0.01        # 1% tolerance for KG consistency check
+
+paths:
+  master_product: "data/master_product.xlsx"
+  distributors: "config/distributors.yaml"
+  templates_dir: "data/templates"
+  output_dir: "output"
+
+output:
+  filename_pattern: "{alias}_{month}_Mapped.xlsx"
+  one_file_per_month: true
