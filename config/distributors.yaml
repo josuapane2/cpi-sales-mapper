@@ -58,49 +58,49 @@ distributors:
     distributor: {name: "PT Panjunan (RTG Only)", alias: "PNJ-RTG", cabang: "Jawa Barat", area: "Bandung", type: "Dist. RTG"}
     file: {format: xlsx, header_row: 0, skip_rows: 0}
     columns: {date: "TGL", sku_name: "NAMA BARANG", sku_code: "PCODE", qty: "innerbox", qty_unit: "innerbox", customer: "NAMA CUSTOMER"}
-    rules: {rtg_detect: name, include_draft: false}
+    rules: {rtg_detect: name, include_draft: true}
 
   KBT_BALIKPAPAN:
     distributor: {name: "PT KBT Balikpapan", alias: "KBT-BPN", cabang: "Kalimantan", area: "Balikpapan", type: "Dist. GT"}
     file: {format: xlsx, header_row: 0, skip_rows: 0}
     columns: {date: "Tgl", sku_name: "Nama Barang", sku_code: "Kode", qty: "Qty", qty_unit: "pcs", customer: "Nama Customer", area: "Area"}
-    rules: {rtg_detect: name, include_draft: false}
+    rules: {rtg_detect: name, include_draft: true}
 
   KBT_BERAU:
     distributor: {name: "PT KBT Berau", alias: "KBT-BRU", cabang: "Kalimantan", area: "Berau", type: "Dist. GT"}
     file: {format: xlsx, header_row: 0, skip_rows: 0}
     columns: {date: "Tgl", sku_name: "Nama Barang", sku_code: "Kode", qty: "Qty", qty_unit: "pcs", customer: "Nama Customer", area: "Area"}
-    rules: {rtg_detect: name, include_draft: false}
+    rules: {rtg_detect: name, include_draft: true}
 
   KBT_SAMARINDA:
     distributor: {name: "PT KBT Samarinda", alias: "KBT-SMD", cabang: "Kalimantan", area: "Samarinda", type: "Dist. GT"}
     file: {format: xlsx, header_row: 0, skip_rows: 0}
     columns: {date: "Tgl", sku_name: "Nama Barang", sku_code: "Kode", qty: "Qty", qty_unit: "pcs", customer: "Nama Customer", area: "Area"}
-    rules: {rtg_detect: name, include_draft: false}
+    rules: {rtg_detect: name, include_draft: true}
 
   LUCKY_SAMPIT:
     distributor: {name: "CV Lucky Sampit", alias: "LCK-SPT", cabang: "Kalimantan", area: "Sampit", type: "Dist. GT"}
     file: {format: xlsx, header_row: 0, skip_rows: 0}
     columns: {date: "Date", sku_name: "ProductName", sku_code: "ProductCode", qty: "TotalQuantity", qty_unit: "pcs", customer: "CustomerName"}
-    rules: {rtg_detect: name, include_draft: false}
+    rules: {rtg_detect: name, include_draft: true}
 
   LUCKY_BANJARMASIN:
     distributor: {name: "CV Lucky Banjarmasin", alias: "LCK-BJM", cabang: "Kalimantan", area: "Banjarmasin", type: "Dist. GT"}
     file: {format: xlsx, header_row: 0, skip_rows: 0}
     columns: {date: "Date", sku_name: "ProductName", sku_code: "ProductCode", qty: "TotalQuantity", qty_unit: "pcs", customer: "CustomerName"}
-    rules: {rtg_detect: name, include_draft: false}
+    rules: {rtg_detect: name, include_draft: true}
 
   KBB_BAJO:
     distributor: {name: "PT KBB (Karunia Berkah Bajo)", alias: "KBB", cabang: "Flores", area: "Labuan Bajo", type: "Dist. GT"}
     file: {format: xlsx, header_row: 0, skip_rows: 0}
     columns: {date: "Tgl", sku_name: "Nama Barang", sku_code: "", qty: "Karton", qty_unit: "karton", customer: "Nama_Customer"}
-    rules: {rtg_detect: name, include_draft: false}
+    rules: {rtg_detect: name, include_draft: true}
 
   CPU:
     distributor: {name: "PT Central Pangan Utama", alias: "CPU", cabang: "Bali-Nusra", area: "Kupang", type: "Dist. GT & Dist. RTG"}
     file: {format: csv, header_row: 0, skip_rows: 0, delimiter: ","}
     columns: {date: "Tgl", sku_name: "Nama_Barang", sku_code: "", qty: "Qty_Jual", qty_unit: "karton", customer: "Nama_Customer"}
-    rules: {rtg_detect: name, include_draft: false}
+    rules: {rtg_detect: name, include_draft: true}
 
   # Example of a distributor whose file carries a per-row 'Satuan' (unit) column.
   # Each row converts by its own unit; qty_unit is only the fallback default.
@@ -108,58 +108,64 @@ distributors:
     distributor: {name: "Demo Mixed-Unit Distributor", alias: "MIX", cabang: "Bali-Nusra", area: "Denpasar", type: "Dist. GT & Dist. RTG"}
     file: {format: xlsx, header_row: 0, skip_rows: 0}
     columns: {date: "Tgl", sku_name: "Nama Barang", sku_code: "Kode", qty: "Qty", unit: "Satuan", qty_unit: "pcs", customer: "Nama Customer"}
-    rules: {rtg_detect: name, include_draft: false}
+    rules: {rtg_detect: name, include_draft: true}
 
   ARL:
     distributor: {name: "CV ARL (Agung Raya Lestari)", alias: "ARL", cabang: "Bali-Nusra", area: "Sumbawa", type: "Dist. GT & Dist. RTG"}
     file: {format: xlsx, header_row: 0, skip_rows: 0}
     columns: {date: "Tgl", sku_name: "Nama", sku_code: "Kode", qty: "Karton", qty_unit: "karton", customer: "Nama_Customer"}
-    rules: {rtg_detect: name, include_draft: false}
+    rules: {rtg_detect: name, include_draft: true}
 
   SUS:
     distributor: {name: "CV SUS (Surya Unggul Sentosa)", alias: "SUS", cabang: "Bali-Nusra", area: "Sumbawa-Bima", type: "Dist. GT & Dist. RTG"}
     file: {format: xlsx, header_row: 0, skip_rows: 0}
     columns: {date: "Tgl", sku_name: "Nama", sku_code: "Kode", qty: "Karton", qty_unit: "karton", customer: "Nama_Customer"}
-    rules: {rtg_detect: name, include_draft: false}
+    rules: {rtg_detect: name, include_draft: true}
 
   WMA:
     distributor: {name: "CV WMA (Wira Mitra Abadi)", alias: "WMA", cabang: "Papua", area: "Sorong", type: "Dist. GT & Dist. RTG"}
     file: {format: xlsx, header_row: 0, skip_rows: 0}
     columns: {date: "Tgl", sku_name: "Nama", sku_code: "Kode", qty: "Karton", qty_unit: "karton", customer: "Nama_Customer"}
-    rules: {rtg_detect: name, include_draft: false}
+    rules: {rtg_detect: name, include_draft: true}
 
   EML:
     distributor: {name: "PT EML (Enam Makmur Lestari)", alias: "EML", cabang: "Banten", area: "Serang", type: "Dist. RTG"}
     file: {format: xlsx, header_row: 0, skip_rows: 0}
     columns: {date: "Tgl Inv", sku_name: "Nama Barang", sku_code: "Kode", qty: "Karton", qty_unit: "karton", customer: "Nama Customer"}
-    rules: {rtg_detect: name, include_draft: false}
+    rules: {rtg_detect: name, include_draft: true}
 
   TRISAMUDRA:
     distributor: {name: "PT Trisamudra", alias: "TSM", cabang: "Sulawesi", area: "Makassar", type: "Dist. GT"}
     file: {format: xlsx, header_row: 0, skip_rows: 0}
     columns: {date: "Tgl", sku_name: "Nama", sku_code: "Kode", qty: "Karton", qty_unit: "karton", customer: "Nama_Customer"}
-    rules: {rtg_detect: name, include_draft: false}
+    rules: {rtg_detect: name, include_draft: true}
 
   SMA:
     distributor: {name: "CV SMA (Sukses Makmur Abadi)", alias: "SMA", cabang: "Sulawesi", area: "Makassar", type: "Dist. GT"}
     file: {format: xlsx, header_row: 0, skip_rows: 0}
     columns: {date: "Date", sku_name: "ProductName", sku_code: "ProductCode", qty: "TotalQuantity", qty_unit: "pcs", customer: "CustomerName"}
-    rules: {rtg_detect: name, include_draft: false}
+    rules: {rtg_detect: name, include_draft: true}
 
   BINTANG_LIMA:
     distributor: {name: "CV Bintang Lima", alias: "BL5", cabang: "Sulawesi", area: "Manado", type: "Dist. GT"}
     file: {format: xlsx, header_row: 0, skip_rows: 0}
     columns: {date: "Tgl", sku_name: "Nama Barang", sku_code: "", qty: "Qty", qty_unit: "pcs", customer: "Nama Toko", salesman_name: "Salesman"}
-    rules: {rtg_detect: name, include_draft: false}
+    rules: {rtg_detect: name, include_draft: true}
 
   PBB:
     distributor: {name: "PT Pangan Bumi Borneo", alias: "PBB", cabang: "Kalimantan", area: "Pontianak", type: "Dist. GT"}
     file: {format: xlsx, header_row: 0, skip_rows: 0}
     columns: {date: "Tgl", sku_name: "Nama Barang", sku_code: "Kode", qty: "Qty", qty_unit: "pcs", customer: "Nama Customer", area: "Area"}
-    rules: {rtg_detect: name, include_draft: false}
+    rules: {rtg_detect: name, include_draft: true}
 
   KUK:
     distributor: {name: "PT KUK (Karunia Utama Khatulistiwa)", alias: "KUK", cabang: "Kalimantan", area: "Pontianak", type: "Dist. GT"}
     file: {format: xlsx, header_row: 0, skip_rows: 0}
     columns: {date: "TGL INV", sku_name: "NAMA BARANG", sku_code: "", qty: "BOX/QTY", qty_unit: "karton", customer: "NAMA CUSTOMER", kg: "KG"}
-    rules: {rtg_detect: name, include_draft: false}
+    rules: {rtg_detect: name, include_draft: true}
+  
+  EPM:
+    distributor: {name: "PT EPM (Enseval Putra Mandiri-Palu)", alias: "EPM", cabang: "Sulawesi", area: "Palu", type: "Dist. GT"}
+    file: {format: xlsx, header_row: 0, skip_rows: 0}
+    columns: {date: "Date 2", sku_name: "ITEM_DESC", sku_code: "ITEM_CODE", qty: "SALES_QTY_CTN", qty_unit: "", customer: "CUSTOMER_NAME"}
+    rules: {rtg_detect: name, include_draft: true}
