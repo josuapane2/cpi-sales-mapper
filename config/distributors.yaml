@@ -169,3 +169,9 @@ distributors:
     file: {format: xlsx, header_row: 0, skip_rows: 0}
     columns: {date: "Date 2", sku_name: "ITEM_DESC", sku_code: "ITEM_CODE", qty: "SALES_QTY_CTN", qty_unit: "", customer: "CUSTOMER_NAME"}
     rules: {rtg_detect: name, include_draft: true}
+
+  ITK_Medan:
+    distributor: {name: "PT ITK (Indomas Tirta Kencana-Medan)", alias: "ITK-MDN", cabang: "Sumbagut", area: "Medan", type: "Dist. RTG"}
+    file: {format: xlsx, header_row: 0, skip_rows: 0}
+    columns: {date: "Inv. Date", sku_name: "Item Name", sku_code: "Item Code", qty: "Small Qty", qty_unit: "", customer: "Cust. Name"}
+    rules: {rtg_detect: name, include_draft: true}
