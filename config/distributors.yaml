@@ -175,3 +175,21 @@ distributors:
     file: {format: xlsx, header_row: 0, skip_rows: 0}
     columns: {date: "Inv. Date", sku_name: "Item Name", sku_code: "Item Code", qty: "Small Qty", qty_unit: "", customer: "Cust. Name"}
     rules: {rtg_detect: name, include_draft: true}
+
+  ITK_Siantar:
+    distributor: {name: "PT ITK (Indomas Tirta Kencana-Siantar)", alias: "ITK-Siantar", cabang: "Sumbagut", area: "Siantar", type: "Dist. RTG"}
+    file: {format: xlsx, header_row: 0, skip_rows: 0}
+    columns: {date: "Inv. Date", sku_name: "Item Name", sku_code: "Item Code", qty: "Small Qty", qty_unit: "", customer: "Cust. Name"}
+    rules: {rtg_detect: name, include_draft: true}
+  
+  ITK_Rantau:
+    distributor: {name: "PT ITK (Indomas Tirta Kencana-Rantau)", alias: "ITK-Rantau", cabang: "Sumbagut", area: "Rantau Prapat", type: "Dist. RTG"}
+    file: {format: xlsx, header_row: 0, skip_rows: 0}
+    columns: {date: "Inv. Date", sku_name: "Item Name", sku_code: "Item Code", qty: "Small Qty", qty_unit: "", customer: "Cust. Name"}
+    rules: {rtg_detect: name, include_draft: true}
+
+  ITK_Sidempuan:
+    distributor: {name: "PT ITK (Indomas Tirta Kencana-Sidempuan)", alias: "ITK-Sidempuan", cabang: "Sumbagut", area: "Sidempuan", type: "Dist. RTG"}
+    file: {format: xlsx, header_row: 0, skip_rows: 0}
+    columns: {date: "Inv. Date", sku_name: "Item Name", sku_code: "Item Code", qty: "Small Qty", qty_unit: "", customer: "Cust. Name"}
+    rules: {rtg_detect: name, include_draft: true}
